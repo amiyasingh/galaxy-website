@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+html{
+    font-size: 62.5%;
+
+}
+body{
+    line-height: 1.7;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+header{
+   height: 100vh;
+     width: 100%;
+    background: url(assets/Hero.png);
+  
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.nav{
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center ;
+    position: relative;
+    z-index: 3;
+   
+    
+}
+.logo-box{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+   
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    margin: auto;
+}
+.list-items{
+   flex: 1;
+}
+.nav-link{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.7rem;
+    display: block;
+    padding: 1rem 3rem;
+}
+.headings{
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading_1{
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 1000;
+    line-height: 1.25;
+    word-spacing: 2rem;
+    font-family: orbitron;
+}
+.heading_sub_1{
+    margin-top: .7rem;
+    padding: 1.5rem 0;
+  
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: center;
+}
+.btn{
+    color: aliceblue;
+    text-decoration: none;
+    margin-top: .7rem;
+    position: relative;
+    z-index: 0;
+    height: 5%;
+    width: 21%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: orbitron;
+    font-weight: 1000;
+    background:  linear-gradient(315deg, #CD1013 1.19%, #FF0004 1.5%, #2500FF 94.46%);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.hero-mercury{
+    position: absolute;
+    left: -6%;
+    top: 14%;
+    height: 24rem;
+    z-index: 3;
+}
+.hero-saturn{
+    position: absolute;
+    top: 46%;
+    left: -19%;
+    bottom: 23%;
+    height: 45rem;
+    z-index: 2;
+}
+.hero-uranus{
+    position: absolute;
+    bottom: -4%;
+    left: -2%;
+    height: 15rem;
+    z-index: 2;
+}
+.hero-neptune{
+    position: absolute;
+    bottom: 23px;
+    left: 50%;
+    transform: translate(-50%, 42%);
+    z-index: 2;
+}
+.hero-jupiter{
+    position: absolute;
+    right: -6%;
+    bottom: -17%;
+    height: 38rem;
+    z-index: 2;
+}
+.hero-mars{
+    position: absolute;
+    right: -30px;
+    transform: translateX(40%);
+    height: 33rem;
+    z-index: 2;
+}
+.hero-venus{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    z-index: 2;
+}
+.hero-earth{
+    position: absolute;
+    top: 15%;
+    left: 51%;
+    z-index: 2;
+    height: 10rem;
+
+}
+.hero-down{
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    height: 40rem;
+    z-index: 1;
+}
+.hero-up{
+    position: absolute;
+    top: 0;
+    right: -15%;
+    height: 50rem;
+    z-index: 1;
+    opacity: .8;
+}
+
+.sun{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(planets/Sun.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.sun-shadow{
+    position: absolute;
+   width: 80%;
+   height: 70%;
+    top: 0;
+    left: 50%;
+    filter: blur(15rem);
+    transform: translate(-50%,-50%);  
+}
+.sun-shadow div{
+    background-color: #FF6700;
+    width: 100%;
+    height: 100%;
+    clip-path: ellipse();
+}
+.hero-sun{
+    position: absolute;
+    top:0 ;
+    
+    width: 100%;
+    height: 40rem;
+}
+.sun-info{
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    width: 60%;
+}
+.main-heading{
+    font-size: 6rem;
+    font-family: orbitron;
+    font-weight: 1000;
+}
+.sub-heading{
+    font-size: 1.5rem;
+}
+.sun-details{
+    padding: 2rem 0;
+    display: flex;
+    gap: 3rem;
+}
+.tab{
+    width: 28rem;
+    height: 13rem;
+    
+    border-radius: 1rem;
+    background: radial-gradient(110.92% 172.47% at 91.09% 101.78%, #430E49 0.53%, #370D44 32.06%, #170B36 89.03%, #100A33 100%);
+    border: 4px solid #400542;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.diameter-logo{
+    padding-left: 1rem;
+     height: 7rem;
+     text-align: center;
+     
+}
+.temperature-logo{
+    padding-left: 2rem;
+    height: 7rem;
+    text-align: center;
+}
+.tab-details{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: start;
+    justify-content: space-between;
+}
+.tab-heading{
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    font-family: orbitron;
+    font-weight: 500;
+     
+}
+.tab-value{
+    font-size: 2.8rem;
+    line-height: 1.2;
+    font-family: orbitron;
+    font-weight: 600;
+}
+
+.mercury{
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    background: url(planets/Mercury.png);
+    background-size: 100% 100%;
+}
+.mercury-image{
+    position: absolute;
+    left: -8%;
+    bottom: 57%;
+    transform: translateY(50%) scale(2.8);
+    z-index: 1;
+}
+.mercury-shadow-1{
+    position:absolute;
+    height: 60rem;
+    width: 60rem;
+    background-color: #D9D9D9;
+    filter: opacity(.3);
+    left: -10%;
+    bottom: 50%;
+    transform: translateY(50%);
+    border-radius: 50%;
+}
+.mercury-shadow-2{
+    position: absolute;
+    height: 62rem;
+    width: 62rem;
+    background-color: #D9D9D9;
+    filter: opacity(.2);
+    left: -10.5%;
+    bottom: 50%;
+    transform: translateY(50%);
+    border-radius: 50%;
+}
+.mercury-info{
+    position: absolute;
+    width: 50%;
+    left: 45%;
+    top: 10%;
+    z-index: 3;
+}
+.mercury-details{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+.venus{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(planets/Venus.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.venus-image{
+    position: absolute;
+    right: -25%;
+    bottom: -65%;
+
+}
+.venus-shadow-1{
+    position:absolute;
+    height: 111rem;
+    width: 111rem;
+    background-color: #3EA596;
+    filter: opacity(.3);
+    right: -24%;
+    bottom: -63%;
+    border-radius: 50%;
+}
+.venus-shadow-2{
+    position:absolute;
+    height: 113rem;
+    width: 113rem;
+    background-color: #3EA596;
+    filter: opacity(.15);
+    right: -24%;
+    bottom: -63%;
+    border-radius: 50%;
+}
+.venus-info{
+    position: absolute;
+    left: 5%;
+    top:8%;
+    width: 50%;
+}
+.venus-details{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 6rem 0;
+}
+.earth{
+    height: 100vh;
+    width: 100%;
+    background: url(planets/Earth.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+    position: relative;
+}
+.earth-image{
+    position: absolute;
+    bottom: -117%;
+    transform: scaleX(-1);
+    height: 177%;
+    width: 85%;
+    left: 6%;
+    z-index: 4;
+}
+.earth-shadow-1{
+    position: absolute;
+    background-color: #7AE8E9;
+    opacity: .3;
+    height: 170%;
+    width: 91.5%;
+    border-radius: 50%;
+    bottom: -123.3%;
+    left: 2.8%;
+}
+.earth-shadow-2{
+    position: absolute;
+    background-color: #7AE8E9;
+    opacity: .15;
+    height: 170%;
+    width: 93%;
+    border-radius: 50%;
+    bottom: -119.5%;
+    left: 2.3%;
+}
+.earth-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex; 
+    align-items: center;
+    gap: 18%;
+    padding-top:1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.earth-headings{
+    width: 60%;
+}
+.moon-info{
+    position: absolute;
+    width: 50%;
+    top: 29%;
+    left: 18%;
+}
+.main-heading-2{
+    font-size: 4rem;
+    font-family: orbitron;
+    font-weight: 1000;
+    text-align: end;
+    line-height: 1.8;
+}
+.sub-heading-2{
+    font-size: 1.5rem;
+    text-align: end;
+}
+.moon-arrow{
+    position: absolute;
+    top: 32%;
+    right: 21%;
+    height: 11%;
+    width: 9%;
+}
+.rocket{
+    position: absolute;
+    bottom: 20%;
+    height: 25%;
+    left: 2%;
+}
+.mars{
+    height: 100vh;
+    width: 100%;
+    background: url(planets/Mars.png);
+    position: relative;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.mars-image{
+    position: absolute;
+    height: 111%;
+    width: 58%;
+    bottom: -47%;
+    left: -24%;
+    z-index: 3;
+}
+.mars-shadow-1{
+    position: absolute;
+    height: 111%;
+    width: 53%;
+    background-color: #FF9A22;
+    opacity: .3;
+    left: -17%;
+    bottom: -48.5%;
+    border-radius: 50%;
+}
+.mars-shadow-2{
+    position: absolute;
+    height: 113%;
+    width: 54%;
+    background-color: #FF9A22;
+    opacity: .15;
+    left: -17%;
+    bottom: -48.5%;
+    border-radius: 50%;
+}
+.mars-info{
+    position: absolute;
+    left: 5%;
+    top: 4%;
+    width: 50%;
+}
+.mars-tabs{
+    position: absolute;
+    right: 10%;
+    top: 16%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.mars-moons-info{
+    position: absolute;
+    width: 23%;
+    top: 50%;
+    left: 46%;
+}
+.main-heading-3{
+    font-size: 3.5rem;
+    font-family: orbitron;
+    font-weight: 1000;
+    line-height: 1.8;
+}
+.sub-heading-3{
+    font-size: 1.5rem;
+   
+}
+.mars-moon-arrow{
+    position: absolute;
+    top: 44%;
+    left: 39%;
+}
+
+.jupiter{
+    height: 100vh;
+    width: 100%;
+    background: url(planets/Jupiter.png);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.jupiter-image{
+    height: 138%;
+    transform: rotate(77deg);
+    width: 53%;
+    position: absolute;
+    top: -40%;
+    right: -16%;
+    z-index: 3;
+}
+.jupiter-shadow-1{
+    height: 91%;
+    width: 54.5%;
+    position: absolute;
+    background-color: #CCAB6B;
+    opacity: .3;
+    top: -12%;
+    right: -17%;
+    border-radius: 50%;
+}
+.jupiter-shadow-2{
+    height: 94%;
+    width: 56.5%;
+    position: absolute;
+    background-color: #CCAB6B;
+    opacity: .15;
+    top: -12.5%;
+    right: -17.9%;
+    border-radius: 50%;
+}
+.jupiter-info{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 45%;
+}
+.jupiter-tab-details{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 8rem;
+}
+.saturn{
+    height: 100vh;
+    width: 100%;
+    background: url(planets/Saturn.png);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.saturn-image{
+    position: absolute;
+    height: 127%;
+    width: 80%;
+    top: -12%;
+    left: -19%;
+}
+.titan{
+    font-size: 2.7rem;
+    font-family: orbitron;
+    font-weight: 1000;
+    position: absolute;
+    left: 10.5%;
+    top: 22%;
+}
+.saturn-info{
+    position: absolute;
+    right: 7%;
+    top: 5%;
+    width: 50%;
+}
+.main-heading-4{
+    font-size: 6rem;
+    font-family: orbitron;
+    font-weight: 1000;
+    text-align: end;
+}
+.sub-heading-4{
+    font-size: 1.5rem;
+    text-align: end;
+}
+.saturn-tab-details{
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 6rem;
+
+}
+.uranus{
+    height: 100vh;
+    width: 100%;
+    background: url(planets/Uranus.png);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.uranus-image{
+    position: absolute;
+    height: 155%;
+    width: 98%;
+    bottom: -90%;
+    left: 5%;
+    z-index: 3;
+}
+.uranus-shadow-1{
+    position: absolute;
+    height: 146%;
+    width: 84%;
+    bottom: -88%;
+    left: 15.5%;
+    background-color: #7AE8E9;
+    opacity: .3;
+    border-radius: 50%;
+
+}
+.uranus-shadow-2{
+    position: absolute;
+    height: 147%;
+    width: 86%;
+    bottom: -87%;
+    left: 14.5%;
+    background-color: #7AE8E9;
+    opacity: .15;
+    border-radius: 50%;
+}
+.uranus-info{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 40%;
+}
+.uranus-tab-details{
+    position: absolute;
+    right: 5%;
+    display: flex;
+    gap: 4rem;
+    top: 10%;
+}
+.neptune{
+    height: 100vh;
+    width: 100%;
+    background: url(planets/Neptune.png);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.footer{
+    height: 60vh;
+    width: 100%;
+    background: url(planets/Footer.png);
+    background-size: 100% 100%;
+    position: relative;
+    overflow:hidden;
+}
